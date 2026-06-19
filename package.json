@@ -1,0 +1,19 @@
+{
+  "name": "autosuggest",
+  "version": "1.0.0",
+  "description": "Verifying my git set up  this project is about showcasing how auto suggest works",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayushi-Singh-1405/autosuggest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayushi-Singh-1405/autosuggest/issues"
+  },
+  "homepage": "https://github.com/Ayushi-Singh-1405/autosuggest#readme"
+}
