@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ayushi-Singh-1405/autosuggest/issues"
   },
-  "homepage": "https://github.com/Ayushi-Singh-1405/autosuggest#readme"
+  "homepage": "https://github.com/Ayushi-Singh-1405/autosuggest#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
