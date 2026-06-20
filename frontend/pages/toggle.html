@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle - Auto Suggest</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #361319;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #6D3A3C;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/pages/card.html">Card</a>
+        <a href="/pages/toggle.html">Toggle</a>
+        <a href="/pages/random-user.html">Random User</a>
+    </div>
+
+    <div class="container">
+        <div class="card" id="user-card">
+            <img id="user-img" src="../images/john.png" alt="User Image">
+            <h2 id="user-name">John</h2>
+            <p id="user-gender">Male</p>
+            <button class="btn" onclick="toggleUser()">Toggle</button>
+        </div>
+    </div>
+
+    <script>
+        const users = [
+            { name: "John", gender: "Male", img: "../images/john.png" },
+            { name: "Jane", gender: "Female", img: "../images/jane.png" }
+        ];
+        let current = 0;
+
+        function toggleUser() {
+            current = (current + 1) % users.length;
+            document.getElementById("user-img").src = users[current].img;
+            document.getElementById("user-name").textContent = users[current].name;
+            document.getElementById("user-gender").textContent = users[current].gender;
+        }
+    </script>
+</body>
+</html>
